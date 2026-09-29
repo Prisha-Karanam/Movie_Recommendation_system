@@ -1,0 +1,9 @@
+{
+  "name": "reel-verdict",
+  "version": "1.0.0",
+  "description": "A film recommendation prototype with generated poster art",
+  "private": true,
+  "scripts": {
+    "start": "npx serve ."
+  }
+}

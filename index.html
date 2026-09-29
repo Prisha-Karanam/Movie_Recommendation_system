@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Reel Verdict — find the film for tonight</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Karla:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap topin">
+    <div class="brand"><i></i>Reel Verdict</div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" aria-selected="true" data-view="browse">Browse</button>
+      <button role="tab" aria-selected="false" data-view="tonight">Tonight</button>
+      <button role="tab" aria-selected="false" data-view="list">Watchlist <span class="cnt" id="wlCount"></span></button>
+      <button role="tab" aria-selected="false" data-view="taste">My taste</button>
+    </nav>
+  </div>
+</header>
+
+<!-- BROWSE -->
+<section id="v-browse">
+  <div class="hero">
+    <div class="strip"></div>
+    <div class="wrap">
+      <p class="kicker">150 films worth your evening. No filler.</p>
+      <h1 class="big">Stop scrolling. <em>Start watching.</em></h1>
+      <p class="sub">Describe the film you want the way you'd describe it to a friend — a mood, a half-remembered plot, a movie you loved. Or filter it down by hand below.</p>
+      <div class="askbox">
+        <div class="askrow">
+          <input id="ask" type="text" autocomplete="off" placeholder="something dark and twisty, but not depressing…" aria-label="Describe the film you want">
+          <button id="askBtn">Find it</button>
+        </div>
+        <div class="tries">
+          <span>Try:</span>
+          <button class="ex">mind-bending like Inception but under 2 hours</button>
+          <button class="ex">Tamil film that'll wreck me emotionally</button>
+          <button class="ex">funny heist, nothing too violent</button>
+          <button class="ex">a slow horror that gets under your skin</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rail">
+    <div class="wrap railin" id="rail"></div>
+  </div>
+
+  <div class="wrap">
+    <div class="statebar">
+      <div class="count"><span id="n">0</span><small id="nlabel">films</small></div>
+      <select class="sort" id="sort" aria-label="Sort films">
+        <option value="rel">Best match</option>
+        <option value="rating">Highest rated</option>
+        <option value="new">Newest first</option>
+        <option value="old">Oldest first</option>
+        <option value="short">Shortest first</option>
+      </select>
+      <button class="clear" id="clear">Clear everything</button>
+    </div>
+    <div id="notice"></div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<!-- TONIGHT -->
+<section id="v-tonight" hidden>
+  <div class="wrap panel">
+    <h2>One film. Picked for right now.</h2>
+    <p class="lead">Tell it your mood and how long you've got. It commits to a single answer — and you can reroll until something clicks.</p>
+    <div class="qs">
+      <div class="card2"><h4>What's the mood?</h4><div class="chips" id="tMood"></div></div>
+      <div class="card2"><h4>How much time?</h4><div class="chips" id="tTime"></div></div>
+      <div class="card2"><h4>Watching with</h4><div class="chips" id="tWith"></div></div>
+    </div>
+    <button class="go" id="tGo">Pick my film</button>
+    <button class="go ghost" id="tAgain" hidden>Not that one — reroll</button>
+    <div id="tOut"></div>
+  </div>
+</section>
+
+<!-- WATCHLIST -->
+<section id="v-list" hidden>
+  <div class="wrap panel">
+    <h2>Your watchlist</h2>
+    <p class="lead">Everything you've saved, plus what you've already seen and rated.</p>
+    <div class="chips" style="margin-bottom:6px" id="listTabs"></div>
+    <div class="grid" id="listGrid"></div>
+  </div>
+</section>
+
+<!-- TASTE -->
+<section id="v-taste" hidden>
+  <div class="wrap panel">
+    <h2>What your taste says about you</h2>
+    <p class="lead">Built from the films you mark as seen and love. The more you rate, the sharper it gets.</p>
+    <div id="tasteOut"></div>
+  </div>
+</section>
+
+<footer><div class="wrap">Reel Verdict — a hand-picked library, not an infinite scroll. Ratings are critical consensus, rounded.</div></footer>
+
+<div class="scrim" id="scrim" hidden><div class="sheet" id="sheet"></div></div>
+
+<script src="movies.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
