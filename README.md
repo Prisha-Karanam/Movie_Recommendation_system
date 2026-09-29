@@ -66,11 +66,8 @@ artwork you'd pull from the TMDB API, which needs a free key and a fetch layer.
 ## screenshots 
 
 <img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 41 PM" src="https://github.com/user-attachments/assets/9186390c-cd82-4426-af60-e125a1a47162" />
-
 <img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 34 PM" src="https://github.com/user-attachments/assets/997c9fcf-29a1-4adb-bc8d-8993e40507cc" />
 <img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 28 PM" src="https://github.com/user-attachments/assets/df11712c-0294-4d23-acfb-b48be1a42f10" />
 <img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 21 PM" src="https://github.com/user-attachments/assets/bccf8444-3190-4fa3-a185-124e6b8a5878" />
-
-
 <img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 13 PM" src="https://github.com/user-attachments/assets/30dc38ce-88dd-4d4f-9bac-678bab88a3d0" />
 
