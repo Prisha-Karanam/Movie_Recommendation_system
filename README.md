@@ -63,3 +63,12 @@ browser, or the key is public).
 Poster art is generated, not licensed. Each film gets a composition chosen from its genre —
 eight templates, ten genre palettes — so the grid reads like a shelf of posters. For real studio
 artwork you'd pull from the TMDB API, which needs a free key and a fetch layer.
+## screenshots 
+<img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 41 PM" src="https://github.com/user-attachments/assets/177b203e-22c2-4bf7-a365-9c5b0cd37dc7" />
+<img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 34 PM" src="https://github.com/user-attachments/assets/997c9fcf-29a1-4adb-bc8d-8993e40507cc" />
+<img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 28 PM" src="https://github.com/user-attachments/assets/df11712c-0294-4d23-acfb-b48be1a42f10" />
+<img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 21 PM" src="https://github.com/user-attachments/assets/bccf8444-3190-4fa3-a185-124e6b8a5878" />
+<img width="1470" height="828" alt="Screenshot 2026-09-29 at 7 38 13 PM" src="https://github.com/user-attachments/assets/7ae8ce84-73cd-4c2f-9a96-b610044bca83" />
+
+
+
